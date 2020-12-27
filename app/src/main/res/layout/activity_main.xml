@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="#4CAF50"
+        android:onClick="sayHello"
+        android:text="SAYHELLO"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:layout_below="@id/button1"
+
+        android:layout_marginTop="2dp"
+        android:background="#D9E1DA"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="0"
+        android:textSize="100sp"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintVertical_bias="0.63"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_below="@id/textView1"
+        android:background="#FF5722"
+        android:onClick="count"
+        android:text="count"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="679dp" />
+
+
+</RelativeLayout>
